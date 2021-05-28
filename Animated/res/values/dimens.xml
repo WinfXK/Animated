@@ -1,0 +1,34 @@
+<resources>
+
+    <dimen name="toast_all_max_padding">10dp</dimen>
+    <dimen name="toast_all_max_w">290dp</dimen>
+    <dimen name="toast_my_image_m_top">0dp</dimen>
+    <dimen name="toast_my_image_m">-8dp</dimen>
+    <dimen name="toast_my_image_padding">2dp</dimen>
+    <dimen name="toast_my_image_wh">25dp</dimen>
+    <dimen name="toast_my_tv_marginTop">15dp</dimen>
+    <dimen name="toast_my_tv_padding">8dp</dimen>
+    <dimen name="toast_my_text_mini_w">10dp</dimen>
+    <dimen name="toast_my_text_size">15sp</dimen>
+    <dimen name="alert_width">290dp</dimen>
+    <dimen name="common_circle_width">3dp</dimen>
+    <dimen name="progress_circle_radius">34dp</dimen>
+    <dimen name="item_height">50dp</dimen>
+    <dimen name="sign_item_height">60dp</dimen>
+    <dimen name="signPaddingSE">20dp</dimen>
+    <dimen name="itemMarginTop">5dp</dimen>
+    <dimen name="signButtonWidth">150dp</dimen>
+    <dimen name="toSign">10sp</dimen>
+    <dimen name="itemT1H">30dp</dimen>
+    <dimen name="itemMS">10dp</dimen>
+    <dimen name="itemIpadding">2dp</dimen>
+    <dimen name="mainImageButtonWH">30dp</dimen>
+    <dimen name="no">1dp</dimen>
+    <dimen name="mainImageButtonmarginTop">120dp</dimen>
+    <dimen name="MainIBmarginEnd">10dp</dimen>
+    <dimen name="MainIBmarginT">10dp</dimen>
+    <dimen name="MSVTS">20sp</dimen>
+    <dimen name="MSVTM">5dp</dimen>
+    <dimen name="MSTOH">20dp</dimen>
+
+</resources>

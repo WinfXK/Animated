@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/load"
+    android:gravity="center_vertical"
+    android:paddingEnd="@dimen/signPaddingSE"
+    android:paddingStart="@dimen/signPaddingSE"
+    tools:context="cn.winfxk.android.help.abhor.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginStart="@dimen/MSVTM"
+            android:background="#00000000"
+            android:gravity="start|center_vertical"
+            android:text="@string/MLogin"
+            android:textSize="@dimen/MSVTS" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="#00000000"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="@dimen/sign_item_height"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:inputType="number"
+                android:labelFor="@+id/editText1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="@dimen/itemMarginTop"
+            android:background="#00000000"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="@dimen/sign_item_height"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/pass" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:inputType="textPassword"
+                android:labelFor="@+id/editText2" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="@dimen/signButtonWidth"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="@dimen/MSTOH"
+            android:background="@drawable/button1"
+            android:onClick="onSign"
+            android:text="@string/dialog_ok" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/MSTOH"
+            android:layout_gravity="end"
+            android:background="@drawable/alpha_button"
+            android:onClick="toSign"
+            android:text="@string/toSign"
+            android:textSize="@dimen/toSign" />
+    </LinearLayout>
+
+</RelativeLayout>

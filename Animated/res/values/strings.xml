@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Animated</string>
+    <string name="dialog_default_title"></string>
+    <string name="dialog_ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="name">账号：</string>
+    <string name="pass">密码：</string>
+    <string name="toSign">没有账号？</string>
+    <string name="sign">昵称：</string>
+    <string name="toLogin">已有账号？</string>
+    <string name="c">体温打卡</string>
+    <string name="admin">管理员</string>
+    <string name="MSign">用户注册</string>
+    <string name="MLogin">用户登录</string>
+    <string name="reload">刷新</string>
+    <string name="temperature">体温：</string>
+    <string name="warning">请输入您的体温！每日仅能输入一次！请核对正确后提交！</string>
+    <string name="Hint">键入内容过滤</string>
+
+</resources>

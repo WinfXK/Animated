@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/load"
+    tools:context="cn.winfxk.android.help.abhor.main.Main" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView1" >
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="@dimen/mainImageButtonWH"
+        android:layout_height="@dimen/mainImageButtonWH"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/MainIBmarginEnd"
+        android:layout_marginTop="@dimen/mainImageButtonmarginTop"
+        android:background="@drawable/alpha_button"
+        android:contentDescription="@string/c"
+        android:onClick="onAdd"
+        android:padding="@dimen/no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/add"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="@dimen/mainImageButtonWH"
+        android:layout_height="@dimen/mainImageButtonWH"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageButton1"
+        android:layout_marginEnd="@dimen/MainIBmarginEnd"
+        android:layout_marginTop="@dimen/MainIBmarginT"
+        android:background="@drawable/alpha_button"
+        android:contentDescription="@string/admin"
+        android:onClick="onAdmin"
+        android:padding="@dimen/no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/admin"
+        android:visibility="invisible" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="@dimen/mainImageButtonWH"
+        android:layout_height="@dimen/mainImageButtonWH"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageButton2"
+        android:layout_marginEnd="@dimen/MainIBmarginEnd"
+        android:layout_marginTop="@dimen/MainIBmarginT"
+        android:background="@drawable/alpha_button"
+        android:contentDescription="@string/reload"
+        android:onClick="onReload"
+        android:padding="@dimen/no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/reload"
+        android:visibility="invisible" >
+    </ImageButton>
+
+</RelativeLayout>

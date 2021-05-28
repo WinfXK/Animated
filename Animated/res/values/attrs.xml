@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0" />
+            <enum name="y" value="1" />
+            <enum name="z" value="2" />
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="pivotX" format="fraction" />
+        <attr name="pivotY" format="fraction" />
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CircleRelativeLayoutLayout">
+        <attr name="background_color" format="color" />
+        <attr name="background_alpha" format="integer" />
+    </declare-styleable>
+    <attr name="antiAlias" format="boolean" />
+    <attr name="startAngle" format="float" />
+    <attr name="sweepAngle" format="float" />
+    <attr name="animTime" format="integer" />
+    <attr name="maxValue" format="float" />
+    <attr name="value" format="float" />
+    <attr name="unit" format="string|reference" />
+    <attr name="unitSize" format="dimension" />
+    <attr name="unitColor" format="color|reference" />
+    <attr name="hint" format="string|reference" />
+    <attr name="hintSize" format="dimension" />
+    <attr name="hintColor" format="color|reference" />
+    <attr name="precision" format="integer" />
+    <attr name="valueSize" format="dimension" />
+    <attr name="valueColor" format="color|reference" />
+    <attr name="arcColor1" format="color|reference" />
+    <attr name="arcColor2" format="color|reference" />
+    <attr name="arcColor3" format="color|reference" />
+    <attr name="bgArcColor" format="color|reference" />
+    <attr name="arcWidth" format="dimension" />
+    <attr name="arcColors" format="color|reference" />
+    <attr name="textOffsetPercentInRadius" format="float" />
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="antiAlias" />
+        <attr name="startAngle" />
+        <attr name="sweepAngle" />
+        <attr name="animTime" />
+        <attr name="maxValue" />
+        <attr name="value" />
+        <attr name="precision" />
+        <attr name="valueSize" />
+        <attr name="valueColor" />
+        <attr name="textOffsetPercentInRadius" />
+        <attr name="hint" />
+        <attr name="hintSize" />
+        <attr name="hintColor" />
+        <attr name="unit" />
+        <attr name="unitSize" />
+        <attr name="unitColor" />
+        <attr name="arcWidth" />
+        <attr name="arcColors" />
+        <attr name="bgArcColor" />
+        <attr name="bgArcWidth" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="DialProgress">
+        <attr name="antiAlias" />
+        <attr name="startAngle" />
+        <attr name="sweepAngle" />
+        <attr name="animTime" />
+        <attr name="maxValue" />
+        <attr name="value" />
+        <attr name="precision" />
+        <attr name="valueSize" />
+        <attr name="valueColor" />
+        <attr name="textOffsetPercentInRadius" />
+        <attr name="unit" />
+        <attr name="unitSize" />
+        <attr name="unitColor" />
+        <attr name="hint" />
+        <attr name="hintSize" />
+        <attr name="hintColor" />
+        <attr name="arcWidth" />
+        <attr name="dialWidth" format="dimension|reference" />
+        <attr name="dialIntervalDegree" format="integer" />
+        <attr name="arcColors" />
+        <attr name="bgArcColor" />
+        <attr name="dialColor" format="color|reference" />
+    </declare-styleable>
+    <declare-styleable name="WaveProgress">
+        <attr name="antiAlias" />
+        <attr name="darkWaveAnimTime" format="integer" />
+        <attr name="lightWaveAnimTime" format="integer" />
+        <attr name="maxValue" />
+        <attr name="value" />
+        <attr name="valueColor" />
+        <attr name="valueSize" />
+        <attr name="hint" />
+        <attr name="hintSize" />
+        <attr name="hintColor" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="circleColor" format="color|reference" />
+        <attr name="bgCircleColor" format="color|reference" />
+        <attr name="lockWave" format="boolean" />
+        <attr name="waveNum" format="integer" />
+        <attr name="waveHeight" format="dimension" />
+        <attr name="darkWaveColor" format="color|reference" />
+        <attr name="showLightWave" format="boolean" />
+        <attr name="lightWaveColor" format="color|reference" />
+        <attr name="lightWaveDirect" format="enum">
+            <enum name="L2R" value="0" />
+            <enum name="R2L" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>
