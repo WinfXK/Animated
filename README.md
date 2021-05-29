@@ -37,6 +37,7 @@
 
 ![](http://q2.qlogo.cn/headimg_dl?bs=2508543202&dst_uin=2508543202&dst_uin=2508543202&;dst_uin=2508543202&spec=100&url_enc=0&referer=bu_interface&term_type=PC)
 - ~~帅逼~~凯:
+  - Web: [冰月](http://Winfxk.cn)
   - Mail: winfxk@qq.com
   - QQ: [冰月] 2508543202
   - GayHub: [WinfXK](https://github.com/WinfXK)
