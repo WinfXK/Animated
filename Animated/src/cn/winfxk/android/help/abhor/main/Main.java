@@ -1,6 +1,7 @@
 package cn.winfxk.android.help.abhor.main;
 
 import cn.pedant.SweetAlert.BaseSweet;
+import cn.pedant.SweetAlert.OnSweetClickListener;
 import cn.pedant.SweetAlert.SweetAlertDialog;
 import cn.winfxk.android.help.abhor.MainActivity;
 import cn.winfxk.android.help.abhor.R;
@@ -12,6 +13,7 @@ import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -29,7 +31,7 @@ import android.widget.TextView;
  * @author Winfxk
  */
 public class Main extends Activity implements OnItemClickListener, OnClickListener, android.view.View.OnClickListener,
-		TextWatcher, OnLongClickListener {
+		TextWatcher, OnLongClickListener, OnSweetClickListener {
 	protected ImageButton add, admin, reload;
 	protected ListView listView, listView2;
 	protected MainHandler handler;
@@ -59,7 +61,7 @@ public class Main extends Activity implements OnItemClickListener, OnClickListen
 		isHttp = true;
 		new MainThread(this, 0, ToID).start();
 		new MainThread(this, 1).start();
-		admin.setOnLongClickListener(this);
+		reload.setOnLongClickListener(this);
 	}
 
 	public void onAdd(View view) {
@@ -104,6 +106,18 @@ public class Main extends Activity implements OnItemClickListener, OnClickListen
 		reload.setVisibility(View.INVISIBLE);
 		isHttp = true;
 		new MainThread(this, 0, ToID).start();
+	}
+
+	@SuppressWarnings("unused")
+	public void onExit(View view) {
+		SweetAlertDialog dialog = new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE);
+		dialog.setMessage("确定要注销吗？");
+		dialog.setCancelable(false);
+		dialog.setConfirmClickListener(this);
+		dialog.setConfirmText("OK");
+		dialog.setCancelClickListener(BaseSweet.NoListener);
+		dialog.setCancelText("No");
+		dialog.show();
 	}
 
 	@Override
@@ -158,5 +172,14 @@ public class Main extends Activity implements OnItemClickListener, OnClickListen
 		isHttp = true;
 		new MainThread(this, 0, ToID).start();
 		return true;
+	}
+
+	@Override
+	public void onClick(SweetAlertDialog sweetAlertDialog) {
+		MainActivity.config.remove("Name");
+		MainActivity.config.remove("Pass");
+		MainActivity.config.save();
+		startActivity(new Intent(this, MainActivity.class));
+		finish();
 	}
 }

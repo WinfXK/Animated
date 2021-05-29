@@ -15,7 +15,7 @@
     <dimen name="progress_circle_radius">34dp</dimen>
     <dimen name="item_height">50dp</dimen>
     <dimen name="sign_item_height">60dp</dimen>
-    <dimen name="signPaddingSE">20dp</dimen>
+    <dimen name="signPaddingSE">10dp</dimen>
     <dimen name="itemMarginTop">5dp</dimen>
     <dimen name="signButtonWidth">150dp</dimen>
     <dimen name="toSign">10sp</dimen>

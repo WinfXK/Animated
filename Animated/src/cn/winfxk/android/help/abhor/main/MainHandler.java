@@ -46,8 +46,6 @@ public class MainHandler extends Handler {
 			return;
 		case 1:
 			main.reload.setRotation(xy = xy-- <= 0 ? 360 : xy);
-			main.add.setRotation(xy);
-			main.admin.setRotation(xy);
 			return;
 		case 0:
 			main.textView.setText(Tool.objToString(map.get("Sign"), "") + "的体温数据");

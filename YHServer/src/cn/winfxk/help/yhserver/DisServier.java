@@ -73,7 +73,7 @@ public class DisServier extends Thread implements FilenameFilter {
 		String ID = Tool.objToString(map.get("Name"));
 		String Pass = Tool.objToString(map.get("Pass")), Sign;
 		File file;
-		Config config;
+		Config config,myConfig;
 		if (Key.toLowerCase().equals("sign")) {
 			Log.info("收到注册请求.");
 			if (ID == null || ID.isEmpty() || ID.length() >= 20)
@@ -121,15 +121,15 @@ public class DisServier extends Thread implements FilenameFilter {
 			String toID = Tool.objToString(map.get("ID"));
 			if (toID == null || toID.isEmpty())
 				toID = ID;
-			config = new Config(new File(Main.PlayerDir, ID));
-			if (!ID.equals(toID) && !config.getBoolean("Admin"))
+			myConfig = new Config(new File(Main.PlayerDir, ID));
+			if (!ID.equals(toID) && !myConfig.getBoolean("Admin"))
 				return sendMessage(MyMap.make("ret", (Object) false).add("Text", "你没有权限查看该用户数据！"));
 			config = new Config(new File(Main.PlayerDir, toID));
 			object = config.get("Item");
 			data = object != null && object instanceof Map ? (HashMap<String, Object>) object : new HashMap<>();
 			return sendMessage(MyMap.make("ret", (Object) true).add("Text", config.getString("Sign") + "的体温数据")
-					.add("Sign", config.getString("Sign")).add("Item", data).add("Admin", config.getBoolean("Admin"))
-					.add("List", config.getBoolean("Admin") ? Main.PlayerDir.list(this) : new ArrayList<>()));
+					.add("Sign", config.getString("Sign")).add("Item", data).add("Admin", myConfig.getBoolean("Admin"))
+					.add("List", myConfig.getBoolean("Admin") ? Main.PlayerDir.list(this) : new ArrayList<>()));
 		case "login":
 			Log.info("收到登录请求.");
 			config = new Config(new File(Main.PlayerDir, ID));

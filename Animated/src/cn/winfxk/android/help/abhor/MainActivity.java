@@ -38,6 +38,9 @@ public class MainActivity extends Activity implements OnSweetClickListener {
 		pass = (EditText) findViewById(R.id.editText2);
 		handler = new MainHandler(this);
 		getPermissions();
+	}
+
+	private void onSign() {
 		String Name = config.getString("Name");
 		String Pass = config.getString("Pass");
 		if (Name != null && !Name.isEmpty() && Pass != null && !Pass.isEmpty()) {
@@ -61,7 +64,7 @@ public class MainActivity extends Activity implements OnSweetClickListener {
 		if (dialog != null)
 			dialog.setMessage("等待授权中....");
 		this.requestPermissions(Permissions, 1);
-		new MainThread(this, 2).start();
+		new MainThread(this, 1).start();
 	}
 
 	private void getPermissions() {
@@ -75,6 +78,7 @@ public class MainActivity extends Activity implements OnSweetClickListener {
 				dialog.setConfirmClickListener(this);
 				return;
 			} else {
+				onSign();
 				config.set("OldStart", true);
 				config.save();
 				return;
@@ -90,6 +94,7 @@ public class MainActivity extends Activity implements OnSweetClickListener {
 			builder.show();
 			return;
 		}
+		onSign();
 	}
 
 	@SuppressWarnings("unused")
@@ -136,7 +141,6 @@ public class MainActivity extends Activity implements OnSweetClickListener {
 				onSign(null);
 			}
 			break;
-
 		default:
 			break;
 		}

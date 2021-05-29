@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/load"
+    android:paddingTop="@dimen/MainIBmarginT"
     tools:context="cn.winfxk.android.help.abhor.main.Main" >
 
     <TextView
@@ -11,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/item_height"
         android:layout_alignParentTop="true"
+        android:textSize="@dimen/MSVTS"
         android:gravity="center_vertical|center_horizontal" />
 
     <ListView
@@ -68,6 +70,22 @@
         android:scaleType="fitCenter"
         android:src="@drawable/reload"
         android:visibility="invisible" >
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="@dimen/mainImageButtonWH"
+        android:layout_height="@dimen/mainImageButtonWH"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageButton3"
+        android:layout_marginEnd="@dimen/MainIBmarginEnd"
+        android:layout_marginTop="@dimen/MainIBmarginT"
+        android:background="@drawable/alpha_button"
+        android:contentDescription="@string/exit"
+        android:onClick="onExit"
+        android:padding="@dimen/no"
+        android:scaleType="fitCenter"
+        android:src="@drawable/exit" >
     </ImageButton>
 
 </RelativeLayout>

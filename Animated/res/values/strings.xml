@@ -15,6 +15,7 @@
     <string name="MSign">用户注册</string>
     <string name="MLogin">用户登录</string>
     <string name="reload">刷新</string>
+    <string name="exit">注销</string>
     <string name="temperature">体温：</string>
     <string name="warning">请输入您的体温！每日仅能输入一次！请核对正确后提交！</string>
     <string name="Hint">键入内容过滤</string>

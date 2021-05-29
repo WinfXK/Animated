@@ -29,6 +29,10 @@ public class Config {
 		return map.containsValue(Data);
 	}
 
+	public void remove(String Key) {
+		map.remove(Key);
+	}
+
 	public boolean containsKey(String Key) {
 		return map.containsKey(Key);
 	}
